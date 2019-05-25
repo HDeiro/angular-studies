@@ -1,0 +1,17 @@
+<div class="data-binding">
+  <h1>Property Binding</h1>
+  <article>
+    <h4>Interpolação</h4>
+    <p>String Interpolada: {{ url }}</p>
+    <p>O resultado de 22 * 2 é {{ 22 * 2 }}</p>
+    <p>O resultado de 22 * 2 + valor é {{ 22 * 2 + getValor()}}</p>
+    <p>2 é {{2 % 2 == 0 ? 'par' : 'ímpar'}}</p>
+  </article>
+
+  <article>
+    <h4>Property Binding</h4>
+    <img src="{{ urlImagem }}">
+    <img [src]="urlImagem">
+    <img bind-src="urlImagem">
+  </article>
+</div>
