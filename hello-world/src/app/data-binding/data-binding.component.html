@@ -25,29 +25,12 @@
         <option value="alert-danger">Danger</option>
       </select>
       <br><br>
-      <div class="alert" role="alert" 
-        [class.alert-success]="alertType.value == 'alert-success'">
-        success
-      </div>
-      <div class="alert" role="alert" 
-        [class.alert-danger]="alertType.value == 'alert-danger'">
-        danger
-      </div>
-      <div class="alert" role="alert" 
-        [class.alert-info]="alertType.value == 'alert-info'">
-        info
-      </div>
-      <div class="alert" role="alert" 
-        [class.alert-warning]="alertType.value == 'alert-warning'">
-        warning
-      </div>
-      <div class="alert {{ alertType.value }}" role="alert">
-        Selected
-      </div>
-      <div class="alert alert-danger" role="alert"
-        [style.display]="alertType.value == 'alert-danger' ? 'block' : 'none'">
-        Only shows on error
-      </div>
+      <div class="alert" role="alert" [class.alert-success]="alertType.value == 'alert-success'">success</div>
+      <div class="alert" role="alert" [class.alert-danger]="alertType.value == 'alert-danger'">danger</div>
+      <div class="alert" role="alert" [class.alert-info]="alertType.value == 'alert-info'">info</div>
+      <div class="alert" role="alert" [class.alert-warning]="alertType.value == 'alert-warning'">warning</div>
+      <div class="alert {{ alertType.value }}" role="alert">Selected</div>
+      <div class="alert alert-danger" role="alert" [style.display]="alertType.value == 'alert-danger' ? 'block' : 'none'">Only shows on error</div>
     </div>
   </article>
 

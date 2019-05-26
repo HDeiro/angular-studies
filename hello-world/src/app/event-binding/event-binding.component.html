@@ -1,0 +1,27 @@
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary"
+      (click)="buttonHasBeenClicked()">
+      Click here
+    </button>
+  </div>
+  <div>
+    <input type="text" #inputModel
+      (keyup)="keyHasBeenClicked($event)"
+      (keyup.enter)="enterHasBeenClicked(inputModel.value)">
+    <p>{{currentValue}}</p>
+    <p>{{savedValue}}</p>
+  </div>
+  <div>
+    <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight]="isMouseOver">
+      Mouse event handling
+    </span>
+  </div>
+</article>
+</section>
+
