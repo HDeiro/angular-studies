@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { InputOutputPropertiesComponent } from './input-output-properties/input-output-properties.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DataBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    InputOutputPropertiesComponent
   ],
   imports: [
     BrowserModule,
