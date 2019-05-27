@@ -34,4 +34,26 @@
     </div>
   </article>
 
+  <article>
+    <h4>Two Way Data Binding</h4>
+    <div>
+      <!-- Way 1 -->
+      <input type="text" 
+        [value]="twoWayBind"
+        (input)="twoWayBind = $event.target.value">
+
+      <!-- Way 2 -->
+      <input type="text" 
+        [ngModel]="twoWayBind"
+        (ngModelChange)="twoWayBind = $event">
+
+      <!-- Way 3 (Banana in a box syntax = [()])-->
+      <input type="text" [(ngModel)]="twoWayBind">
+
+      <!-- Way 4 -->
+      <input type="text" bindon-ngModel="twoWayBind">
+
+      <p>Você digitou: {{twoWayBind}}</p>
+    </div>
+  </article>
 </div>

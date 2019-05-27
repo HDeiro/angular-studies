@@ -9,6 +9,8 @@ export class DataBindingComponent implements OnInit {
 
   url:string = "https://hugodeiro.com";
   urlImagem:String = "http://lorempixel.com/300/200/cats/";
+  twoWayBind:String = "";
+
   getValor() {
     return 33;
   }
