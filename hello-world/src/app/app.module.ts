@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { InputOutputPropertiesComponent } from './input-output-properties/input-output-properties.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     DataBindingComponent,
     EventBindingComponent,
     InputOutputPropertiesComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
