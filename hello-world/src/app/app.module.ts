@@ -9,6 +9,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { InputOutputPropertiesComponent } from './input-output-properties/input-output-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InputOutputPropertiesComponent } from './input-output-properties/input-
     HomeComponent,
     DataBindingComponent,
     EventBindingComponent,
-    InputOutputPropertiesComponent
+    InputOutputPropertiesComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,
@@ -27,4 +29,6 @@ import { InputOutputPropertiesComponent } from './input-output-properties/input-
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
