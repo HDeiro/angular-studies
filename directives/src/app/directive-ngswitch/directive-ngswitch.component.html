@@ -1,0 +1,31 @@
+<nav>
+  <style>
+    .active {
+      font-weight: 600;
+    }
+  </style>
+  <div class="nav-container">
+    <a class="nav-item"
+      (click)="activeTab = 'Home'"
+      [class.active]="activeTab == 'Home'">
+      Home
+    </a>
+    <a class="nav-item"
+      (click)="activeTab = 'Map'"
+      [class.active]="activeTab == 'Map'">
+      Map
+    </a>
+    <a class="nav-item"
+      (click)="activeTab = 'List'"
+      [class.active]="activeTab == 'List'">
+      List
+    </a>
+  </div>
+</nav>
+
+<div class="container" [ngSwitch]="activeTab">
+  <p *ngSwitchCase="'Home'">is in Home mode</p>
+  <p *ngSwitchCase="'Map'">is in Map mode</p>
+  <p *ngSwitchCase="'List'">is in List mode</p>
+  <p *ngSwitchCase>is in default mode</p>
+</div>
