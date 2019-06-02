@@ -1,5 +1,5 @@
 <div style="text-align:center">
-  <cursos></cursos>
+ <!-- <cursos></cursos>
   <home-component></home-component>
   <h1>
     Welcome to {{ title }}!
@@ -7,10 +7,12 @@
   <data-binding></data-binding>
   <event-binding></event-binding>
   <ioprop [inputId]="'Amarelo'"></ioprop>
-  
+
   <outprop-counter [counterValue]="10"
     (eventEmitterValueHasChanged)="onValueChanged($event)">
   </outprop-counter>
-
-  <lifecycle></lifecycle>
+-->
+  <lifecycle [initialValue]="initialValue" *ngIf="!destroyLifecycle"></lifecycle>
+  <button class="btn btn-primary" (click)="changeValue()">Change initial value</button>
+  <button class="btn btn-primary" (click)="destroyLifecycleComponent()">Destroy Lifecycle component</button>
 </div>

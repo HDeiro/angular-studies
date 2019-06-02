@@ -7,8 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-world';
+  initialValue:number = 5;
+  destroyLifecycle:boolean = false;
 
   onValueChanged($event) {
     console.log($event);
+  }
+
+  changeValue() {
+    this.initialValue++;
+  }
+
+  destroyLifecycleComponent() {
+    this.destroyLifecycle = true;
   }
 }
