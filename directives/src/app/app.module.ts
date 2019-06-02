@@ -8,6 +8,7 @@ import { DirectiveNgswitchComponent } from './directive-ngswitch/directive-ngswi
 import { DirectiveNgforComponent } from './directive-ngfor/directive-ngfor.component';
 import { DirectiveNgclassComponent } from './directive-ngclass/directive-ngclass.component';
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
+import { DirectiveNgcontentComponent } from './directive-ngcontent/directive-ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle
     DirectiveNgswitchComponent,
     DirectiveNgforComponent,
     DirectiveNgclassComponent,
-    DirectiveNgstyleComponent
+    DirectiveNgstyleComponent,
+    DirectiveNgcontentComponent
   ],
   imports: [
     BrowserModule,
