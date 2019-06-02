@@ -1,5 +1,5 @@
 <div>
   <button class="btn btn-primary" (click)="change(-1)">-</button>
-  <input type="number" readonly [value]="counterValue">
+  <input type="number" readonly [value]="counterValue" #inputElement>
   <button class="btn btn-primary" (click)="change(+1)">+</button>
 </div>
