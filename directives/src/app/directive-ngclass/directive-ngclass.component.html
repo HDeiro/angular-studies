@@ -1,0 +1,9 @@
+<h5>ng-class</h5>
+
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+<h3 [ngClass]="{'red-text': active}">Class element</h3>
+<button (click)="active = !active">Color</button>
