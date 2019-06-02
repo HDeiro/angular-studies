@@ -1,5 +1,7 @@
 <h5>*ngFor</h5>
 
 <ul>
-  <li *ngFor="let item of items">{{item}}</li>
+  <li *ngFor="let item of items; let index = index">
+    Item {{index}} - {{item}}
+  </li>
 </ul>
