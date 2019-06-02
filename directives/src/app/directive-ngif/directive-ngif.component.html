@@ -1,0 +1,18 @@
+<h5>*ngIf</h5>
+
+<div class="classes" *ngIf="classes.length">
+  <h6>Classes</h6>
+</div>
+
+<div class="no-classes" *ngIf="!classes.length">
+  <h6>There are no classes available</h6>
+</div>
+
+<!-- Treatment with hidden -->
+
+<div [hidden]="!classes.length">
+  There are classes available
+</div>
+<div [hidden]="classes.length">
+  There are no classes available
+</div>
