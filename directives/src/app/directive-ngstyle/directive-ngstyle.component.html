@@ -1,0 +1,10 @@
+<h5>ngSyle</h5>
+
+<button (click)="active=!active"
+  [ngStyle]="{
+    'backgroundColor': active ? '#fab123' : '#321baf',
+    'fontSize': active ? '30px' : '18px',
+    'color': 'white'
+  }">
+  Change style
+</button>
