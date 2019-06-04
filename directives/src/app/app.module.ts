@@ -9,6 +9,8 @@ import { DirectiveNgforComponent } from './directive-ngfor/directive-ngfor.compo
 import { DirectiveNgclassComponent } from './directive-ngclass/directive-ngclass.component';
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
 import { DirectiveNgcontentComponent } from './directive-ngcontent/directive-ngcontent.component';
+import { YellowBackgroundDirective } from './shared/yellow-background.directive';
+import { DirectiveYellowbackgroundComponent } from './directive-yellowbackground/directive-yellowbackground.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DirectiveNgcontentComponent } from './directive-ngcontent/directive-ngc
     DirectiveNgforComponent,
     DirectiveNgclassComponent,
     DirectiveNgstyleComponent,
-    DirectiveNgcontentComponent
+    DirectiveNgcontentComponent,
+    YellowBackgroundDirective,
+    DirectiveYellowbackgroundComponent
   ],
   imports: [
     BrowserModule,
