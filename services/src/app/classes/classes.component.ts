@@ -9,14 +9,12 @@ import { ClassService } from './classes.services';
 })
 export class ClassesComponent implements OnInit {
 
-  classService: ClassService;
   classes: string[] = [];
 
-  constructor() {
-    this.classService = new ClassService();
+  constructor(private _classService: ClassService) {
   }
 
   ngOnInit() {
-    this.classes = this.classService.getClasses();
+    this.classes = this._classService.getClasses();
   }
 }
