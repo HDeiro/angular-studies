@@ -8,8 +8,22 @@
   <h6 class="content">NgContent Content</h6>
 </app-directive-ngcontent> -->
 <!-- <app-directive-yellowbackground></app-directive-yellowbackground> -->
-<p
+<!-- <p
   [highlight-default]="'#440FED'"
   [highlight]="'#DFC123'">
   Highlight directive
-</p>
+</p>-->
+
+<div id="ngelsae">
+  <div class="classes" *ngIf="showing">
+    <h6>If</h6>
+  </div>
+
+  <div class="no-classes" *ngElse="showing">
+    <h6>Else</h6>
+  </div>
+
+  <button (click)="showing = !showing">
+    Switch
+  </button>
+</div>
