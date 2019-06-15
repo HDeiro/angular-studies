@@ -4,7 +4,8 @@ import { ClassService } from '../classes/classes.services';
 @Component({
   selector: 'app-create-class',
   templateUrl: './create-class.component.html',
-  styleUrls: ['./create-class.component.scss']
+  styleUrls: ['./create-class.component.scss'],
+  providers: [ClassService]
 })
 export class CreateClassComponent implements OnInit {
 

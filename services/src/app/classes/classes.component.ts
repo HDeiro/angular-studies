@@ -5,7 +5,8 @@ import { ClassService } from './classes.services';
 @Component({
   selector: 'app-classes',
   templateUrl: './classes.component.html',
-  styleUrls: ['./classes.component.scss']
+  styleUrls: ['./classes.component.scss'],
+  providers: [ClassService]
 })
 export class ClassesComponent implements OnInit {
 

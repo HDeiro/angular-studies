@@ -15,9 +15,6 @@ import { CreateClassComponent } from './create-class/create-class.component';
   ],
   imports: [
     CommonModule
-  ],
-  providers: [
-    ClassService
   ]
 })
 export class ClassModule { }
