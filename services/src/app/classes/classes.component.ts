@@ -17,5 +17,9 @@ export class ClassesComponent implements OnInit {
 
   ngOnInit() {
     this.classes = this._classService.getClasses();
+    ClassService.staticEmitterClassCreated.subscribe(clazz => {
+      this.classes.push(clazz);
+      console.log(`Pushed class ${clazz} from static emitter`);
+    });
   }
 }

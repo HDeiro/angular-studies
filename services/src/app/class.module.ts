@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ClassService } from './classes/classes.services';
 import { ClassesComponent } from './classes/classes.component';
 import { CreateClassComponent } from './create-class/create-class.component';
+import { ReceiveCreatedClassComponent } from './receive-created-class/receive-created-class.component';
 
 @NgModule({
   declarations: [
     CreateClassComponent,
-    ClassesComponent
+    ClassesComponent,
+    ReceiveCreatedClassComponent
   ],
   exports: [
     CreateClassComponent,
