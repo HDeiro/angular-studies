@@ -16,9 +16,26 @@ export class PipesExamplesComponent implements OnInit {
     lauchDate: new Date()
   }
 
-  constructor() { }
+  bookList = [
+    'Angular 2',
+    'Go',
+    'Java',
+    'JavaScript'
+  ];
+
+  filterText = '';
+
+  constructor() {}
 
   ngOnInit() {
+  }
+
+  filterBooks() {
+    if(!this.bookList)
+      return this.bookList
+    else
+      return this.bookList.filter(text => 
+        text.toLocaleLowerCase().indexOf(this.filterText) >= 0);
   }
 
 }

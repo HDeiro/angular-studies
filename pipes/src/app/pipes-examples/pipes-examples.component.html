@@ -5,3 +5,11 @@
 <p>Price: {{book.price | currency:'R$'}}</p>
 <p>Launch Date: {{book.lauchDate | date:'yyyy-MM-dd'}}</p>
 <p>Entire Book Json: {{book | json}}</p>
+
+Book List
+
+<input type="text" [(ngModel)]="filterText">
+
+<ul>
+  <li *ngFor="let bookItem of filterBooks()">{{bookItem}}</li>
+</ul>
