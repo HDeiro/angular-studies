@@ -12,7 +12,7 @@ export class PipesExamplesComponent implements OnInit {
     author: 'j. k. rowling',
     pages: 332,
     rating: 4.5555555,
-    price: 12.32621,
+    price: 12000.32621,
     lauchDate: new Date()
   }
 
