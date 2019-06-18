@@ -1,5 +1,5 @@
 <p>Title: {{book.title | uppercase}}</p>
-<p>Author: {{book.author | lowercase}}</p>
+<p>Author: {{book.author | lowercase | camelCase}}</p>
 <p>Rating: {{book.rating | number:'.1-2'}}</p>
 <p>Pages: {{book.pages}}</p>
 <p>Price: {{book.price | number:'.1' | currency:'U$D '}}</p>
